@@ -27,3 +27,19 @@ not make it free of residual stellar or instrumental systematics.
 
 The saved row is the input actually used by `scripts/analyze_transit.py`; the
 analysis does not query a changing live service at run time.
+
+
+## Additional TESS sectors for robustness analysis
+
+All are unmodified standard-cadence SPOC light curves from the same [MAST TESS collection](https://doi.org/10.17909/t9-nmc8-f686).
+
+- Sector 9: `tess2019058134432-s0009-0000000036734222-0139-s_lc.fits` (1,848,960 bytes)
+  - MAST URI: `mast:TESS/product/tess2019058134432-s0009-0000000036734222-0139-s_lc.fits`
+  - SHA-256: `24e025d8efb700db1b83981d7d40d5145b116f06f3b387822e2f4af1fe136374`
+
+## Published planetary spectrum
+
+- Archive record: [10.5281/zenodo.10525170](https://zenodo.org/records/10525170)
+- Data type: phase-resolved emission; instrument: JWST MIRI/LRS
+- `data/spectra/fiducial_combined.h5` — SHA-256 `3c270fd46236ec671b88c35846a95c11aef3c2030b61434b600c74d844b4a2a1`
+- `data/spectra/eureka_v1.h5` — SHA-256 `c3a05fbb77638f0101986c40fbbe34e6421262069fbdbabf956728daa7cb4ba2`
