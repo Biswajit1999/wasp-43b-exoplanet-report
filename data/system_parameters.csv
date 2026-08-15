@@ -1,0 +1,2 @@
+pl_name,hostname,ra,dec,pl_orbper,pl_tranmid,pl_trandur,pl_rade,pl_bmasse,pl_eqt,pl_orbsmax,sy_dist,sy_tmag,st_teff,st_rad,st_mass,disc_year,discoverymethod,disc_refname,disc_pubdate,disc_facility
+WASP-43 b,WASP-43,154.9081869,-9.8064431,0.813475,2455528.86774,1.1592,10.424,565.714,1426.7,0.0142,86.7467,11.1184,4400.0,0.6,0.58,2011,Transit,<a refstr=HELLIER_ET_AL__2011 href=https://ui.adsabs.harvard.edu/abs/2011arXiv1104.2823H/abstract target=ref> Hellier et al. 2011 </a>,2011-11,SuperWASP
