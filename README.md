@@ -1,4 +1,11 @@
 # WASP-43 b: Mapping a Hot Jupiter from Day to Night
+<!-- RESEARCH-IDENTITY-START -->
+**Independent research report by [Biswajit Jana](https://biswajit1999.github.io/Biswajit_Jana.github.io/)** · [Live report](https://biswajit1999.github.io/wasp-43b-exoplanet-report/) · [ORCID](https://orcid.org/0009-0002-2411-1891) · [Complete research portfolio](https://biswajit1999.github.io/Biswajit_Jana.github.io/research/exoplanets/)
+<!-- RESEARCH-IDENTITY-END -->
+
+
+
+
 
 <!-- TARGET-IDENTITY-START -->
 <p align="center">
