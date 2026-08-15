@@ -1,10 +1,20 @@
-# WASP-43 b — Real TESS Transit Report
+# WASP-43 b: Mapping a Hot Jupiter from Day to Night
 
+<!-- TARGET-IDENTITY-START -->
+<p align="center">
+  <img src="assets/artist_concept.webp" alt="Artist's interpretation of WASP-43 b near its host star" width="900">
+</p>
+
+<p align="center"><em>AI-generated artist's interpretation informed by the measured system properties; not a direct image.</em></p>
+
+**Hot Jupiter · thermal phase curve · JWST + TESS**
+
+A tidally locked giant used as a weather laboratory: the report joins a corrected TESS transit to a phase-resolved JWST/MIRI spectrum and its day–night thermal contrast.
+<!-- TARGET-IDENTITY-END -->
 <p align="center">
   <img src="figures/wasp43b_tess_transit.png" alt="Phase-folded real TESS transit light curve of WASP-43 b" width="760">
 </p>
 
-One real public TESS SPOC light curve; one historical NASA Exoplanet Archive ephemeris; one timing-adjusted, limb-darkened transit fit.
 
 **[Open the full report](https://biswajit1999.github.io/wasp-43b-exoplanet-report/)** — the live GitHub Pages version.
 
@@ -21,6 +31,7 @@ pip install -r requirements.txt
 python scripts/analyze_transit.py
 python scripts/analyze_multisector.py
 python scripts/analyze_spectrum.py
+python scripts/analyze_atmospheric_evidence.py
 pytest tests/ -v
 ```
 
@@ -66,6 +77,22 @@ The archive supplies 14 wavelength bins at each of four orbital phases. Weighted
 
 Source: [10.5281/zenodo.10525170](https://zenodo.org/records/10525170) (JWST MIRI/LRS). Exact files and checksums are in [`data/SOURCE.md`](data/SOURCE.md); complete numerical results are in [`figures/spectrum_statistics.csv`](figures/spectrum_statistics.csv).
 <!-- SPECTRUM-UPGRADE-END -->
+
+<!-- ATMOSPHERE-EVIDENCE-START -->
+## Atmospheric evidence: detection, limit, or unknown?
+
+<p align="center"><img src="figures/molecular_evidence.png" alt="Source-graded atmospheric evidence for WASP-43 b" width="820"></p>
+
+The archived MIRI spectra reproduce strong wavelength structure at four orbital phases. Published retrievals attribute features to water and place an upper limit on methane; the repository's linear-slope tests are not molecule detections.
+
+| Species | Status | Evidence | Basis |
+|---|---|---|---|
+| H2O | reported evidence | all observed phases | phase-resolved retrieval |
+| CH4 | reported non-detection | 2-sigma upper limit 1-6 ppm | limit depends on model assumptions |
+| O2 | no evidence | not reported | no molecular-oxygen inference |
+
+Primary source: [Bell et al. 2024, Nature Astronomy](https://doi.org/10.1038/s41550-024-02230-x). The table is also available as [`data/atmospheric_evidence.csv`](data/atmospheric_evidence.csv). Oxygen-bearing species such as H2O, CO2, and SO2 are **not** evidence for molecular oxygen (O2) or a biosignature.
+<!-- ATMOSPHERE-EVIDENCE-END -->
 
 ## System context
 

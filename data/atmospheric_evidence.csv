@@ -1,0 +1,4 @@
+species,status,evidence,basis,source_label,source_url
+H2O,reported evidence,all observed phases,phase-resolved retrieval,"Bell et al. 2024, Nature Astronomy",https://doi.org/10.1038/s41550-024-02230-x
+CH4,reported non-detection,2-sigma upper limit 1-6 ppm,limit depends on model assumptions,"Bell et al. 2024, Nature Astronomy",https://doi.org/10.1038/s41550-024-02230-x
+O2,no evidence,not reported,no molecular-oxygen inference,"Bell et al. 2024, Nature Astronomy",https://doi.org/10.1038/s41550-024-02230-x
