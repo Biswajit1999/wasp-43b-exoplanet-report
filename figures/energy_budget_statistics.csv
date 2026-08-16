@@ -1,0 +1,29 @@
+quantity,value,unit
+analysis_band_min,5.25,micron
+analysis_band_max,10.25,micron; bins above 10.5 excluded
+substellar_irradiation_temperature,1950.43981172,K; saved stellar parameters
+fiducial_nightside_brightness_temperature,889.647972583,K; blackbody-star approximation
+fiducial_nightside_temperature_error,18.2022540381,K; inflated by spectral scatter
+fiducial_dayside_brightness_temperature,1597.31844777,K; blackbody-star approximation
+fiducial_dayside_temperature_error,15.2399141656,K; inflated by spectral scatter
+fiducial_day_night_temperature_contrast,707.670475184,K
+fiducial_day_night_temperature_contrast_error,23.739777502,K
+fiducial_day_night_band_flux_ratio,3.2222029057,dimensionless
+fiducial_phase_max,0.474360250187,orbital phase
+fiducial_peak_offset_from_eclipse,-9.2303099328,degrees; negative is before eclipse
+fiducial_peak_offset_error,0.448399304899,degrees; formal four-point sinusoid
+fiducial_eastward_hotspot_proxy,9.2303099328,degrees; interpretation assumes longitudinal thermal dominance
+illustrative_best_bond_albedo,0.218,band-temperature Cowan-Agol mapping
+illustrative_bond_albedo_68_min,0.176,conditional
+illustrative_bond_albedo_68_max,0.256,conditional
+illustrative_best_redistribution,0.221330827068,"epsilon; 0 none, 1 complete"
+illustrative_redistribution_68_min,0.196293233083,conditional
+illustrative_redistribution_68_max,0.246368421053,conditional
+fiducial_night_temperature,889.647972583,K
+fiducial_day_temperature,1597.31844777,K
+fiducial_peak_offset_from_eclipse,-9.2303099328,degrees
+fiducial_phase_curve_semi_amplitude,2151.91380482,ppm
+eureka_v1_night_temperature,887.575508716,K
+eureka_v1_day_temperature,1602.89532251,K
+eureka_v1_peak_offset_from_eclipse,-9.45816668986,degrees
+eureka_v1_phase_curve_semi_amplitude,2186.53653371,ppm

@@ -39,6 +39,7 @@ python scripts/analyze_transit.py
 python scripts/analyze_multisector.py
 python scripts/analyze_spectrum.py
 python scripts/analyze_atmospheric_evidence.py
+python scripts/analyze_energy_budget.py
 pytest tests/ -v
 ```
 
@@ -101,6 +102,35 @@ The archived MIRI spectra reproduce strong wavelength structure at four orbital 
 Primary source: [Bell et al. 2024, Nature Astronomy](https://doi.org/10.1038/s41550-024-02230-x). The table is also available as [`data/atmospheric_evidence.csv`](data/atmospheric_evidence.csv). Oxygen-bearing species such as H2O, CO2, and SO2 are **not** evidence for molecular oxygen (O2) or a biosignature.
 <!-- ATMOSPHERE-EVIDENCE-END -->
 
+## From four spectra to a thermal circulation test
+
+<p align="center"><img src="figures/wasp43b_energy_budget.png" alt="WASP-43 b phase-resolved brightness temperatures, thermal phase curve, and conditional energy-budget grid" width="900"></p>
+
+The archived spectra sample the nightside (phase 0.00), morning hemisphere (0.25), dayside (0.50), and evening hemisphere (0.75). This upgrade converts each planet/star flux ratio to a monochromatic brightness temperature using the saved stellar temperature and a blackbody-star approximation. Wavelengths above 10.5 microns are displayed but excluded from the band summaries because the source publication documents increasing long-wavelength detector systematics.
+
+Across 5.25–10.25 microns, the fiducial reduction gives:
+
+| Quantity | Repository calculation |
+|---|---:|
+| Nightside colour temperature | 890 +/- 18 K |
+| Dayside colour temperature | 1,597 +/- 15 K |
+| Day–night temperature contrast | 708 +/- 24 K |
+| Dayside/nightside band-flux ratio | 3.22 |
+| Phase of fitted maximum | 0.4744 |
+| Peak relative to secondary eclipse | -9.23 +/- 0.45 degrees |
+
+Negative phase offset means that maximum light occurs before secondary eclipse. If the signal is interpreted as predominantly longitudinal thermal emission, this corresponds to an eastward hotspot proxy of **9.23 degrees**. The independently archived Eureka reduction gives **9.46 degrees** and changes the summarized dayside and nightside temperatures by only 5.6 K and 2.1 K, respectively. This cross-reduction agreement is more informative than quoting one fit in isolation.
+
+Bell et al. (2024) reported average brightness temperatures of 1,524 +/- 35 K and 863 +/- 23 K and an eastward offset of 7.34 +/- 0.38 degrees from the full time series. The repository values are not expected to match exactly: they use a blackbody stellar spectrum, four phase-binned spectra, a restricted wavelength interval, and a sinusoid rather than the source analysis. They nevertheless independently reproduce the large day–night contrast and pre-eclipse maximum.
+
+### Conditional albedo–recirculation mapping
+
+Inserting the repository colour temperatures into the Cowan–Agol analytic energy-balance equations gives an illustrative best point of **Bond albedo 0.218** and **redistribution efficiency epsilon 0.221**. The conditional Delta-chi-square <= 2.30 ranges are 0.176–0.256 and 0.196–0.246.
+
+Those ranges are visualization aids, **not retrieved planetary parameters**. Band brightness temperatures are not bolometric hemisphere-effective temperatures; the blackbody-star approximation ignores the stellar atmosphere; molecular absorption and nightside clouds make different wavelengths probe different pressures; and the four phase bins share information from the same time-series reduction. The published three-dimensional atmospheric analysis remains authoritative.
+
+Machine-readable results are in [`figures/energy_budget_statistics.csv`](figures/energy_budget_statistics.csv) and [`figures/phase_brightness_temperatures.csv`](figures/phase_brightness_temperatures.csv).
+
 ## System context
 
 - Radius: 10.42 Earth radii
@@ -119,6 +149,9 @@ Primary source: [Bell et al. 2024, Nature Astronomy](https://doi.org/10.1038/s41
 - Midpoint freedom corrects accumulated ephemeris error but introduces a bounded timing search. ΔBIC, not a naïve one-parameter p-value, is used as the support gate.
 - PDCSAP processing, dilution, stellar variability, transit-timing variations, and long-timescale covariance can still bias the inferred geometry.
 - Radius ratio, impact parameter, and fixed limb darkening are correlated. Published global fits with physical priors and simultaneous detrending remain authoritative.
+- Brightness temperatures assume both star and planet emit as monochromatic blackbodies and therefore differ systematically from stellar-atmosphere and retrieval-based temperatures.
+- The formal phase-offset error propagates the four archived spectral-bin uncertainties; it does not include time-series covariance or freedom beyond a single sinusoid.
+- The albedo–recirculation grid treats band colour temperatures as hemisphere-effective temperatures only to expose the degeneracy. It must not be interpreted as a precision Bond-albedo measurement.
 
 ## Repository structure
 
@@ -128,6 +161,7 @@ index.html
 requirements.txt
 data/                       unmodified TESS FITS + NASA row + SOURCE.md
 scripts/analyze_transit.py  timing-adjusted limb-darkened transit fit
+scripts/analyze_energy_budget.py  brightness temperatures + phase/energy diagnostics
 figures/                    generated plot + summary_statistics.csv
 tests/                      real-data regression tests
 .github/workflows/tests.yml CI on every push and pull request
@@ -140,6 +174,8 @@ LICENSE                     MIT
 2. Ricker, G. R. et al. (2015), *Transiting Exoplanet Survey Satellite (TESS)*, JATIS 1, 014003, [doi:10.1117/1.JATIS.1.1.014003](https://doi.org/10.1117/1.JATIS.1.1.014003).
 3. TESS Team, *TESS Light Curves — All Sectors*, MAST, [doi:10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686); Sector 9 used here.
 4. [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/), `pscomppars` TAP row retrieved 2026-08-15.
+5. Bell, T. J. et al. (2024), *Nightside clouds and disequilibrium chemistry on the hot Jupiter WASP-43b*, [doi:10.1038/s41550-024-02230-x](https://doi.org/10.1038/s41550-024-02230-x).
+6. Cowan, N. B. & Agol, E. (2011), *The Statistics of Albedo and Heat Recirculation on Hot Exoplanets*, [doi:10.1088/0004-637X/729/1/54](https://doi.org/10.1088/0004-637X/729/1/54).
 
 ## Author
 
