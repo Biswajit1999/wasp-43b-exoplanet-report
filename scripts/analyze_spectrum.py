@@ -55,17 +55,19 @@ def main():
     with h5py.File(DATA / "fiducial_combined.h5") as handle:
         phases = handle["phase"][...]; wavelength = handle["wavelength"][...]
         values = handle["fp_fs"][...]; errors = handle["fp_fs_error"][...]
+    trusted = wavelength <= 10.5
     rows = []; fig, ax = plt.subplots(figsize=(9.2, 5.3))
     for phase, spectrum, uncertainty in zip(phases, values, errors):
-        flat = flat_test(spectrum, uncertainty); linear = linear_test(wavelength, spectrum, uncertainty)
-        rows.append({"comparison": f"phase {phase:.2f}", **flat, **linear})
+        flat = flat_test(spectrum[trusted], uncertainty[trusted]); linear = linear_test(wavelength[trusted], spectrum[trusted], uncertainty[trusted])
+        rows.append({"comparison": f"phase {phase:.2f}", "wavelength_min_micron": float(wavelength[trusted].min()), "wavelength_max_micron": float(wavelength[trusted].max()), "excluded_long_wavelength_bins": int((~trusted).sum()), **flat, **linear})
         ax.errorbar(wavelength, spectrum, yerr=uncertainty, fmt="o-", ms=3.5, lw=1.2, label=f"orbital phase {phase:.2f}")
+    ax.axvspan(10.5, wavelength.max() + 0.1, color="#94a3b8", alpha=0.2, label="excluded from tests")
     write_rows(rows)
     ax.set(xlabel="Wavelength [micron]", ylabel="Planet/star flux ratio [ppm]",
            title="WASP-43 b: published JWST MIRI/LRS phase-resolved emission spectra")
     ax.grid(alpha=.2); ax.legend(frameon=False, fontsize=8); fig.tight_layout()
     fig.savefig(FIGURE_FILE, dpi=190); plt.close(fig)
-    return {"rows": rows, "n": len(wavelength)}
+    return {"rows": rows, "n": len(wavelength), "n_tested": int(trusted.sum()), "n_excluded": int((~trusted).sum())}
 
 if __name__ == "__main__":
-    result = main(); print(f"WASP-43 b: four orbital phases, {result['n']} wavelength bins each")
+    result = main(); print(f"WASP-43 b: four phases, {result['n_tested']}/{result['n']} bins used in tests ({result['n_excluded']} excluded above 10.5 micron)")
