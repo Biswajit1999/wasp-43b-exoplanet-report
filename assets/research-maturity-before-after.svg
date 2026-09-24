@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 980 520">
+  <title id="title">Research maturity before and after the September 2026 audit</title>
+  <desc id="desc">Six paired bars compare provenance, domain validity, robustness, identifiability, automation, and claim discipline. The documented rubric rises from 48 to 94 out of 100.</desc>
+  <rect width="980" height="520" fill="#f7f4ee"/>
+  <text x="54" y="55" fill="#182433" font-family="Arial,sans-serif" font-size="28" font-weight="700">Research maturity audit</text>
+  <text x="54" y="84" fill="#5d6772" font-family="Arial,sans-serif" font-size="15">Repository-specific rubric · diagnostic, not peer review</text>
+  <g font-family="Arial,sans-serif" font-size="15" fill="#334155">
+    <text x="54" y="147">Archive provenance</text><text x="54" y="207">Domain validity</text><text x="54" y="267">Sensitivity</text><text x="54" y="327">Identifiability</text><text x="54" y="387">Automation</text><text x="54" y="447">Claim discipline</text>
+  </g>
+  <g stroke="#d6d1c7" stroke-width="1"><path d="M230 112V468"/><path d="M370 112V468"/><path d="M510 112V468"/><path d="M650 112V468"/><path d="M790 112V468"/><path d="M930 112V468"/></g>
+  <g fill="#aeb6bd"><rect x="230" y="126" width="266" height="14"/><rect x="230" y="186" width="322" height="14"/><rect x="230" y="246" width="224" height="14"/><rect x="230" y="306" width="196" height="14"/><rect x="230" y="366" width="364" height="14"/><rect x="230" y="426" width="252" height="14"/></g>
+  <g fill="#c04f2b"><rect x="230" y="143" width="700" height="14"/><rect x="230" y="203" width="686" height="14"/><rect x="230" y="263" width="658" height="14"/><rect x="230" y="323" width="672" height="14"/><rect x="230" y="383" width="658" height="14"/><rect x="230" y="443" width="672" height="14"/></g>
+  <g font-family="Arial,sans-serif" font-size="13"><text x="796" y="105" fill="#aeb6bd">BEFORE 48/100</text><text x="796" y="125" fill="#c04f2b">AFTER 94/100</text></g>
+  <g font-family="Arial,sans-serif" font-size="12" fill="#5d6772"><text x="226" y="493">0</text><text x="500" y="493">40</text><text x="780" y="493">80</text><text x="916" y="493">100</text></g>
+</svg>
