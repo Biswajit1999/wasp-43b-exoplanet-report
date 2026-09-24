@@ -10,8 +10,8 @@ jobs:
       matrix:
         python-version: ["3.11", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
@@ -20,4 +20,7 @@ jobs:
       - run: python scripts/analyze_multisector.py
       - run: python scripts/analyze_atmospheric_evidence.py
       - run: python scripts/analyze_spectrum.py
+      - run: python scripts/analyze_energy_budget.py
+      - run: python scripts/analyze_phase_identifiability.py
+      - run: python scripts/verify_zenodo_provenance.py
       - run: pytest tests/ -v
