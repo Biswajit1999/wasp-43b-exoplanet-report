@@ -1,0 +1,14 @@
+quantity,value,interpretation
+multiverse_designs,180,predeclared analysis combinations
+offset_min_deg,-9.713831877189955,negative means before eclipse
+offset_median_deg,-8.823739742800502,across all designs
+offset_max_deg,-7.65797008681584,negative means before eclipse
+all_designs_pre_eclipse,True,directional robustness only
+fiducial_offset_range_deg,-9.477591 to -8.038661,analysis-choice envelope
+eureka_offset_range_deg,-9.713832 to -7.657970,analysis-choice envelope
+jackknife_offset_range_deg,-9.717537 to -8.951896,"leave-one-wavelength-out, trusted bins"
+phase_observations,4,archive phase bins
+first_harmonic_parameters,3,one residual degree of freedom
+first_harmonic_rank,3,identified under the assumed model
+two_harmonic_parameters,5,more parameters than observations
+two_harmonic_rank,4,rank deficient; source model cannot be reproduced
