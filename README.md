@@ -164,7 +164,6 @@ SHA-256 values are recorded in [`data/zenodo_manifest.csv`](data/zenodo_manifest
 The verifier runs offline in CI and optionally accepts the downloaded ZIP for
 an outer-archive and member-byte audit.
 
-<p align="center"><img src="assets/research-maturity-before-after.svg" alt="Research maturity before and after the audit" width="900"></p>
 
 The 48-to-94 comparison is a disclosed repository rubric, not peer review.
 
