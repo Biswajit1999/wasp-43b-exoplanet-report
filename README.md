@@ -25,6 +25,12 @@ A tidally locked giant used as a weather laboratory: the report joins a correcte
 
 **[Open the full report](https://biswajit1999.github.io/wasp-43b-exoplanet-report/)** — the live GitHub Pages version.
 
+## Research evidence and downloads
+
+[Open the evidence browser](https://biswajit1999.github.io/wasp-43b-exoplanet-report/evidence.html) for 15 selected files, including [`phase_identifiability_summary.csv`](figures/phase_identifiability_summary.csv). Each file has a download link and SHA-256 digest.
+
+Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
+
 ## September 2026 evidence audit
 
 The central result is now deliberately narrower and stronger: a pre-eclipse
