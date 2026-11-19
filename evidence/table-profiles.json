@@ -1,0 +1,735 @@
+{
+  "schema": 1,
+  "project": "WASP-43 b: Mapping a Hot Jupiter from Day to Night",
+  "tables": [
+    {
+      "path": "data/atmospheric_evidence.csv",
+      "label": "Atmospheric evidence",
+      "role": "Data and provenance",
+      "rows": 3,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "species",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "status",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "evidence",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "basis",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "source_label",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "source_url",
+          "blank": 0,
+          "text": 3,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data/system_parameters.csv",
+      "label": "System parameters",
+      "role": "Data and provenance",
+      "rows": 1,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "pl_name",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "hostname",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "ra",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 154.9081869,
+          "maximum": 154.9081869
+        },
+        {
+          "name": "dec",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": -9.8064431,
+          "maximum": -9.8064431
+        },
+        {
+          "name": "pl_orbper",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.813475,
+          "maximum": 0.813475
+        },
+        {
+          "name": "pl_tranmid",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 2455528.86774,
+          "maximum": 2455528.86774
+        },
+        {
+          "name": "pl_trandur",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.1592,
+          "maximum": 1.1592
+        },
+        {
+          "name": "pl_rade",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 10.424,
+          "maximum": 10.424
+        },
+        {
+          "name": "pl_bmasse",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 565.714,
+          "maximum": 565.714
+        },
+        {
+          "name": "pl_eqt",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1426.7,
+          "maximum": 1426.7
+        },
+        {
+          "name": "pl_orbsmax",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.0142,
+          "maximum": 0.0142
+        },
+        {
+          "name": "sy_dist",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 86.7467,
+          "maximum": 86.7467
+        },
+        {
+          "name": "sy_tmag",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 11.1184,
+          "maximum": 11.1184
+        },
+        {
+          "name": "st_teff",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 4400.0,
+          "maximum": 4400.0
+        },
+        {
+          "name": "st_rad",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.6,
+          "maximum": 0.6
+        },
+        {
+          "name": "st_mass",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.58,
+          "maximum": 0.58
+        },
+        {
+          "name": "disc_year",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 2011.0,
+          "maximum": 2011.0
+        },
+        {
+          "name": "discoverymethod",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_refname",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_pubdate",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_facility",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data/zenodo_manifest.csv",
+      "label": "Zenodo manifest",
+      "role": "Data and provenance",
+      "rows": 2,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "record_doi",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "archive_name",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "archive_md5",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "archive_entry",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "local_path",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "size_bytes",
+          "blank": 0,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 9674.0,
+          "maximum": 12431.0
+        },
+        {
+          "name": "entry_md5",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "entry_sha256",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/phase_identifiability_summary.csv",
+      "label": "Phase identifiability summary",
+      "role": "Tables and numerical results",
+      "rows": 13,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 13,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "value",
+          "blank": 0,
+          "text": 4,
+          "finite": 9,
+          "nonfinite": 0
+        },
+        {
+          "name": "interpretation",
+          "blank": 0,
+          "text": 13,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/summary_statistics.csv",
+      "label": "Summary statistics",
+      "role": "Tables and numerical results",
+      "rows": 36,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 36,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "value",
+          "blank": 0,
+          "text": 1,
+          "finite": 35,
+          "nonfinite": 0
+        },
+        {
+          "name": "unit",
+          "blank": 28,
+          "text": 8,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/spectrum_statistics.csv",
+      "label": "Spectrum statistics",
+      "role": "Tables and numerical results",
+      "rows": 4,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "chi2",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 619.1990067892451,
+          "maximum": 1634.1443267258153
+        },
+        {
+          "name": "comparison",
+          "blank": 0,
+          "text": 4,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "dof",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 10.0,
+          "maximum": 10.0
+        },
+        {
+          "name": "excluded_long_wavelength_bins",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 3.0,
+          "maximum": 3.0
+        },
+        {
+          "name": "linear_chi2",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 59.304155568030055,
+          "maximum": 179.40123650988613
+        },
+        {
+          "name": "linear_dof",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 9.0,
+          "maximum": 9.0
+        },
+        {
+          "name": "linear_p",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 6.756807464055371e-34,
+          "maximum": 1.8252239061472428e-09
+        },
+        {
+          "name": "mean",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 1639.3363726652246,
+          "maximum": 5608.339973756881
+        },
+        {
+          "name": "n",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 11.0,
+          "maximum": 11.0
+        },
+        {
+          "name": "p",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 0.0,
+          "maximum": 1.3528915623308809e-126
+        },
+        {
+          "name": "slope_error",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 13.031158260898517,
+          "maximum": 17.262492927775362
+        },
+        {
+          "name": "slope_ppm_per_micron",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 408.4667882410801,
+          "maximum": 497.0226387687094
+        },
+        {
+          "name": "wavelength_max_micron",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 10.25,
+          "maximum": 10.25
+        },
+        {
+          "name": "wavelength_min_micron",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 5.25,
+          "maximum": 5.25
+        }
+      ]
+    },
+    {
+      "path": "figures/energy_budget_statistics.csv",
+      "label": "Energy budget statistics",
+      "role": "Tables and numerical results",
+      "rows": 28,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 28,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "value",
+          "blank": 0,
+          "text": 0,
+          "finite": 28,
+          "nonfinite": 0,
+          "minimum": -9.45816668986,
+          "maximum": 2186.53653371
+        },
+        {
+          "name": "unit",
+          "blank": 0,
+          "text": 28,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/multisector_statistics.csv",
+      "label": "Multisector statistics",
+      "role": "Tables and numerical results",
+      "rows": 1,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "sector",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 9.0,
+          "maximum": 9.0
+        },
+        {
+          "name": "filename",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "transit_events",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 26.0,
+          "maximum": 26.0
+        },
+        {
+          "name": "n_points",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 5396.0,
+          "maximum": 5396.0
+        },
+        {
+          "name": "transit_supported",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "delta_bic",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 104325.8731,
+          "maximum": 104325.8731
+        },
+        {
+          "name": "timing_shift_hours",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": -0.0614324805,
+          "maximum": -0.0614324805
+        },
+        {
+          "name": "depth_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 26341.17138,
+          "maximum": 26341.17138
+        },
+        {
+          "name": "formal_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 88.83292447,
+          "maximum": 88.83292447
+        },
+        {
+          "name": "scatter_scaled_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 110.6495003,
+          "maximum": 110.6495003
+        },
+        {
+          "name": "reduced_chi_square",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.551497193,
+          "maximum": 1.551497193
+        },
+        {
+          "name": "beta",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 3.383405674,
+          "maximum": 3.383405674
+        },
+        {
+          "name": "robust_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 374.372147,
+          "maximum": 374.372147
+        }
+      ]
+    },
+    {
+      "path": "figures/phase_brightness_temperatures.csv",
+      "label": "Phase brightness temperatures",
+      "role": "Tables and numerical results",
+      "rows": 112,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "reduction",
+          "blank": 0,
+          "text": 112,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "phase",
+          "blank": 0,
+          "text": 0,
+          "finite": 112,
+          "nonfinite": 0,
+          "minimum": 0.0,
+          "maximum": 0.75
+        },
+        {
+          "name": "wavelength_micron",
+          "blank": 0,
+          "text": 0,
+          "finite": 112,
+          "nonfinite": 0,
+          "minimum": 5.25,
+          "maximum": 11.75
+        },
+        {
+          "name": "planet_star_flux_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 112,
+          "nonfinite": 0,
+          "minimum": 1127.79956734175,
+          "maximum": 7797.181800010299
+        },
+        {
+          "name": "flux_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 112,
+          "nonfinite": 0,
+          "minimum": 42.77764753894135,
+          "maximum": 457.0549369015689
+        },
+        {
+          "name": "blackbody_star_brightness_temperature_k",
+          "blank": 0,
+          "text": 0,
+          "finite": 112,
+          "nonfinite": 0,
+          "minimum": 706.5702127246423,
+          "maximum": 1740.9970800480166
+        },
+        {
+          "name": "temperature_error_k",
+          "blank": 0,
+          "text": 0,
+          "finite": 112,
+          "nonfinite": 0,
+          "minimum": 6.696741486058386,
+          "maximum": 80.47040383468021
+        },
+        {
+          "name": "used_in_5p25_10p25_summary",
+          "blank": 0,
+          "text": 112,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    }
+  ],
+  "excluded": []
+}
