@@ -1,0 +1,81 @@
+{
+  "project": "WASP-43 b: Mapping a Hot Jupiter from Day to Night",
+  "repository": "https://github.com/Biswajit1999/wasp-43b-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Atmospheric evidence",
+      "path": "data/atmospheric_evidence.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "System parameters",
+      "path": "data/system_parameters.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Tess2019058134432 s0009 0000000036734222 0139 s lc",
+      "path": "data/tess2019058134432-s0009-0000000036734222-0139-s_lc.fits",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Zenodo manifest",
+      "path": "data/zenodo_manifest.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Phase identifiability summary",
+      "path": "figures/phase_identifiability_summary.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Spectrum statistics",
+      "path": "figures/spectrum_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Energy budget statistics",
+      "path": "figures/energy_budget_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Multisector statistics",
+      "path": "figures/multisector_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Phase brightness temperatures",
+      "path": "figures/phase_brightness_temperatures.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Wasp43b published spectrum",
+      "path": "figures/wasp43b_published_spectrum.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Molecular evidence",
+      "path": "figures/molecular_evidence.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Phase identifiability audit",
+      "path": "figures/phase_identifiability_audit.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Wasp43b depth consistency",
+      "path": "figures/wasp43b_depth_consistency.png",
+      "role": "Figures"
+    }
+  ]
+}
