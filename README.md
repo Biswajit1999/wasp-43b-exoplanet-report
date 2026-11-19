@@ -27,6 +27,13 @@ A tidally locked giant used as a weather laboratory: the report joins a correcte
 
 ## Research evidence and downloads
 
+
+- [Download the machine-readable table profiles](evidence/table-profiles.json) for 9 archived tables. Open `table-evidence.html` from the checkout for the coverage chart.
+- Start with [Phase identifiability summary](figures/phase_identifiability_summary.csv), [Summary statistics](figures/summary_statistics.csv), [Spectrum statistics](figures/spectrum_statistics.csv).
+- [View Wasp43b published spectrum](figures/wasp43b_published_spectrum.png).
+
+To rebuild the table profiles after rebuilding the evidence inventory, run `python scripts/profile_evidence_tables.py` followed by `python scripts/render_table_profiles.py`.
+
 [Open the evidence browser](https://biswajit1999.github.io/wasp-43b-exoplanet-report/evidence.html) for 15 selected files, including [`phase_identifiability_summary.csv`](figures/phase_identifiability_summary.csv). Each file has a download link and SHA-256 digest.
 
 Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
